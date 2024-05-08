@@ -1,0 +1,69 @@
+.menu_1 {
+    text-align: center; /* Выравниваем содержимое по центру */
+}
+
+.ax_default.heading_3{
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.menu_4,
+.menu_5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.menu_4 .ax_default,
+.menu_5 .ax_default {
+    padding: 30px; ;
+    margin-bottom: 20px; /* Устанавливаем нижний отступ между элементами */
+}
+.menu_1 .order {
+    background-color:  rgb(145, 227, 237); /* Задает цвет фона кнопки */
+    color: white; /* Задает цвет текста кнопки */
+    padding: 10px 20px; /* Задает внутренние отступы вокруг содержимого кнопки */
+    text-align: center; /* Выравнивает текст кнопки по центру */
+    border-radius: 5px; /* Создает скругленные углы у кнопки */
+    cursor: pointer; /* Устанавливает курсор в виде указателя при наведении на кнопку */
+    border: 1px solid rgb(145, 227, 237); /* Задает границу (грани) кнопки */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu_1 .order:hover {
+    background-color:rgb(248, 170, 242); /* Задает цвет фона кнопки при наведении на нее */
+    border-color: rgb(248, 170, 242); /* Задает цвет границы кнопки при наведении на нее */
+}
+
+.order2{
+  color: #68391A;
+  font-weight: 700;
+  font-size: 16px;
+}
+.order3{
+    color: #68391A;
+    font-weight: 600;
+    font-size: 16px;
+  }
+@media screen and (max-width: 768px) {
+    .menu_4,
+    .menu_5{
+        display: flex;
+        flex-direction: column; /* Располагаем элементы в столбец на маленьких экранах */
+        align-items: center; /* Выравниваем элементы по центру на маленьких экранах */
+    }
+}
+#myChart {
+    max-width: 800px; /* Максимальная ширина для диаграммы */
+    margin: 0 auto; /* Центрирование диаграммы по горизонтали */
+    display: block; /* Обеспечение блочного отображения */
+  }
+h2 {
+    color: #673A1C;
+    text-align: center;
+}
+
+  

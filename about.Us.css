@@ -1,0 +1,116 @@
+/* Стили для контейнера */
+
+#u51 {
+  display: flex;
+    font-family: Arial, sans-serif; /* Шрифт */
+    padding: 20px; /* Отступы */
+    background-color: #f7f7f7; /* Цвет фона */
+    text-align: center; /* Выравнивание текста по центру */
+    width: 50%; /* Ширина блока */
+    height: 100%;
+    margin: 0 auto; /* Автоматическое выравнивание по горизонтали */
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 767px) {
+    #u51 {
+      display: contents;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f7f7f7;
+      text-align: center;
+      width: 85%;
+      height: 100%;
+      margin: 0 auto
+    }
+  }
+
+  
+  #u58{
+   width: 300%;
+  }
+
+  .img{
+    padding: 20px;
+  }
+  
+  /* Стили для дочернего элемента u59_text */
+  #u59_text {
+    color: #673A1C; /* Цвет текста */
+    font-weight: 700;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  /* Стили для абзацев внутри u59_text */
+  #u59_text p {
+    margin-bottom: 10px; /* Отступ между абзацами */
+  }
+  
+  /* Можно добавить дополнительные стили в соответствии с вашими потребностями */
+  #ce_nter{
+    display: none;
+  }
+.table1{
+  display: block;
+  text-align: center; /* Выравнивание текста по центру */
+  margin-top: 20px; /* Отступ сверху */
+  margin-bottom: 20px; /* Отступ снизу */
+  color: #673A1C;
+
+}
+  table {
+    border-collapse: collapse;
+    width: 70%; /* Ширина таблицы */
+    margin: 0 auto; /* Автоматическое выравнивание по центру */
+    overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+    padding: 0;
+    text-align: center; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+    color: #673A1C; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    background-color: rgba(153, 227, 236, 1);
+    color:#673A1C;
+}
+
+td {
+    border: none;
+}
+@media screen and (max-width: 768px) {
+  table {
+      width: 80%; /* На маленьких экранах таблица будет занимать 80% доступной ширины */
+  }
+
+  th, td {
+      font-size: 0.9em; /* Уменьшаем размер шрифта для ячеек на маленьких экранах */
+      padding: 1px;
+      text-align: center;
+      padding-right: 3px; /* Уменьшаем отступ слева на маленьких экранах */
+  }
+
+  th {
+      font-size: 1.0em; /* Размер шрифта для заголовков на маленьких экранах */
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1px;
+  }
+
+
+}

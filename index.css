@@ -1,0 +1,217 @@
+@media only screen and (max-width: 767px) {
+  
+  #u73 {
+      width: 100%;
+      flex-direction: column; /* Расположить изображения в столбец */
+      align-items: center; /* Выравнивание по центру */
+  }
+  .menu1{
+      display: none;
+      flex-direction: column; /* Объединяем строки в столбик */
+      gap: 60px;
+      justify-content: flex-start;
+      align-items: center;
+        
+  }
+  .nav-button {
+      display: flex;
+      top: 20px;
+    }
+  #top {
+      max-width: 100%; /* Максимальная ширина слайдера равна ширине экрана */
+      padding: 0 10px; /* Добавляем отступы по бокам для изображений */
+      top: 50xp;
+    }
+    
+    .arrow {
+          width: 50px;
+          height: 50px;
+    }
+    a.hyperlink {
+      text-decoration: none;
+      color: #673A1C;
+      text-decoration: none; /* Убираем подчеркивание */
+      font-weight: bold; /* Жирный шрифт */
+      background-color:#f9d195;
+      border: none;
+      border-radius: 0;
+       transition: border-color 0.3s ease;
+       padding: 0px;
+    }  
+    a.hyperlink:hover {
+          color: rgb(145, 227, 237); /* Изменяем цвет текста при наведении */
+        }
+    
+
+  .nav.open .menu1 {
+    position: fixed;
+    top: 0px;
+    bottom: 5px;
+    right: 0;
+    background-color: #f9d195;
+
+    z-index: 1;
+    padding: 46px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+
+    font-size: 34px;
+    font-weight: 600;
+}
+  .nav-button {
+  position: absolute; /* Абсолютное позиционирование для кнопки бургер-меню */
+  z-index: 9; /* Перекрывает остальные элементы */
+  top: 46px; /* Отступ сверху */
+  right: 30px; /* Отступ справа */
+}
+
+  .nav.open .nav-button {
+      position: fixed; /* Фиксированное позиционирование для кнопки бургер-меню при открытом меню */
+  }
+
+    .ax_default.imag2 {
+      gap: 55px;
+    }
+    .header__burger-btn{
+      display: block;
+    }
+    .menu1{
+      position: absolute;
+      left: 0px;
+      top: px;
+      background-color:#f9d195;
+    }
+    .hyperlink{
+      text-decoration: none;
+      color: #673A1C;
+      padding: 11px 55px;
+      border-bottom: none;
+      transition: color 0.3s ease;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+    .ax_default.image img {
+      margin: 0 10px;
+      padding: 15px;
+      left: 7%;
+    }
+    #u51{
+      display: block;
+      font-family: Arial, sans-serif; /* Шрифт */
+      padding: 20px; /* Отступы */
+      background-color: #f7f7f7; /* Цвет фона */
+      text-align: center; /* Выравнивание текста по центру */
+      width: 85%; /* Ширина блока */
+      height: 100%;
+      margin: 0 auto; /* Автоматическое выравнивание по горизонтали */
+  
+    }
+    #ce_nter {
+      display: block;
+      font-weight: 700;
+      color: #673A1C;
+    }
+   #u8{
+    top: 200px;
+   }
+   .ax_default.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #u51 {
+    display: contents;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto
+  }
+    
+
+}
+/* Меняем стили при ширине экрана меньше 800px */
+@media (max-width: 800px) {
+  /* Теперь форма (правая колонка) будет сверху, а элементы (левая колонка) снизу */
+  .content {
+    height: 100%;
+    flex-direction: column-reverse; /* располагаем в колонку и реверсивно */
+  }
+
+  /* Внутри левой колонки внутренние элементы располагаем в ряд */
+  .left-side {
+    display: block;
+    margin-top: 50px;
+    margin-right: 50%;
+    flex-direction: row; /* располагаем элементы (адрес, телефон, email) в ряд */
+    width: 100%; /* левая колонка на всю ширину */
+    justify-content: center;
+    flex-wrap: wrap; /* перенос элементов, если не хватит места */
+  }
+  .details {
+    margin-right: 1px;
+  }
+  .details:last-child {
+    margin-right: 0;
+  }
+
+  /* Убираем разделительную линию */
+  .left-side::before {
+    display: none;
+  }
+  .content1{
+    margin-top: 20px;
+  }
+ 
+
+  /* Правая колонка теперь на всю ширину и не имеет отступа слева */
+  .right-side {
+    display: block;
+    width: 100% !important;
+    margin-left: 0 !important;
+ }
+ .footer-row{
+  flex-direction: column; /* Располагаем элементы в столбик */
+  align-items: center; /* Выравниваем элементы по центру */
+  }
+  .footer-row > *{
+  margin-bottom: 10px; /* Добавляем нижний отступ между элементами */
+  }
+
+  .left-side {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .footer-button {
+    display: inline-block;
+    height: 20px;
+    width: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding-top: 15px; */
+    border: 3px solid #68391A;
+    border-radius: 50px;
+    color: #68391A;
+    font-weight: 700;
+    font-size: 14px; 
+    line-height: 0.1px; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slider {
+  width: 80%; /* Ширина на всю доступную ширину */
+  height: 200px; /* Высота, например, 60% от высоты экрана устройства */
+  position: relative;
+  overflow: hidden;
+  margin: 45px auto 0; /* Устанавливаем автоматические отступы сверху, слева и справа */
+}
+ 
+}

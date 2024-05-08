@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="form.css" type="text/css" rel="stylesheet">
+  
+    <title>Form</title>
+</head>
+
+<body>
+  <div id="base" class="container">
+    <div class="row1">
+        <div class="col-75">
+            <div class="container">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-51">
+                            <h3>Платежный адрес</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Полное имя</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Иван Петрович Семенов" required>
+                            <label for="email"><i class="fa fa-envelope"></i> Электронный адрес</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="city"><i class="fa fa-institution"></i> Город/Населёный Пункт</label>
+                            <input type="text" id="city" name="city" placeholder="Петропавловск" required>
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Адрес</label>
+                            <input type="text" id="adr" name="address" placeholder="ул.Проездная, д. 54" required>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="zip">Индекс</label>
+                                    <input type="text" id="zip" name="zip" placeholder="150000" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="product">Наименование товара</label>
+                                    <select id="product" name="product" required>
+                                        <option value="">Выберите товар</option>
+                                        <option value="item1">КЛАССИЧЕСКИЙ КРАСНЫЙ БАРХАТ</option>
+                                        <option value="item2">ШОКОЛАДНАЯ ВАНИЛЬ</option>
+                                        <option value="item3">ДВОЙНОЙ ШОКОЛАД</option>
+                                        <!--ПРОБУКЦИЯ 2-->>
+                                        <option value="item4">КЛАССИЧЕСКИЙ КРАСНЫЙ БАРХАТ (БЕЗ ГЛЮТЕНА)</option>
+                                        <option value="item5">ШОКОЛАДНАЯ ВАНИЛЬ (БЕЗ САХАРА)</option>
+                                        <option value="item6">ДВОЙНОЙ ШОКОЛАД (БЕЗ САХАРА)</option>
+                                    </select>
+                                </div>
+                                <div class="col-50">
+                                    <label for="quantity">Количество</label>
+                                    <input type="number" id="quantity" name="quantity" placeholder="1" min="1" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-51">
+                            <h3>Оплата</h3>
+                            <label for="fname">Платежная карта</label>
+                            <div class="icon-container">
+                                <img src="img/Menu/kaspi-bank.svg" alt="Каспи">
+                                <img src="img/Menu/halyk (1).svg" alt="ВИЗА">
+                                <img src="img/Menu/visa.svg" alt="МАСЕРКАРТ">
+                            </div>
+                            <label for="cname">Имя на карте</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Ivan Semenov" required>
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                            <label for="expmonth">Действ. до (месяц)</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="Сентябрь" required>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Действ. до (год)</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="ЗАКАЗАТЬ" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+
+</html>

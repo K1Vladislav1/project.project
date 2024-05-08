@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>error.404</title>
+  <style>
+    /* Общие стили для страницы */
+    html,
+    body {
+      text-align: center; /* Центрирование текста */
+      font-family: sans-serif; /* Шрифт */
+      background-color: rgba(249, 209, 149, 1); /* Цвет фона */
+      margin: 0; /* Убираем отступы */
+      padding: 0; /* Убираем внутренние отступы */
+    }
+
+    /* Стили для верхнего блока */
+    .section {
+      margin-top: 50px; /* Отступ сверху */
+    }
+
+    /* Стили для заголовка ошибки */
+    .error {
+      font-size: 170px; /* Размер шрифта */
+      text-shadow: /* Тень текста */
+        1px 1px 1px #F0A6BC,
+        2px 2px 1px #F0A6BC,
+        3px 3px 1px #F0A6BC,
+        4px 4px 1px #F0A6BC,
+        5px 5px 1px #F0A6BC,
+        6px 6px 1px #F0A6BC,
+        7px 7px 1px #F0A6BC,
+        8px 8px 1px #F0A6BC,
+        25px 25px 8px rgba(0, 0, 0, 0.2); /* Составление тени */
+      animation: colorAnimation 3s infinite; /* Анимация цвета */
+    }
+
+    /* Стили для текстового блока */
+    .page p {
+      font-size: 25px; /* Размер шрифта */
+      color: #673A1C; /* Цвет текста */
+      position: relative; /* Относительное позиционирование */
+      top: -150px; /* Смещение вверх */
+    }
+
+    /* Стили для кнопки "Вернуться домой" */
+    .back-home {
+      background-color: #eceeee; /* Цвет фона */
+      display: inline-block; /* Отображение как блок внутри строки */
+      border: 3.5px solid #F0A6BC; /* Граница */
+      color: #673A1C; /* Цвет текста */
+      text-transform: uppercase; /* Преобразование текста в верхний регистр */
+      font-weight: 600; /* Жирность текста */
+      padding: 0.75rem 1rem 0.6rem; /* Внутренние отступы */
+      transition: all 0.2s linear; /* Плавное изменение свойств */
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Тень */
+      border-radius: 10px; /* Радиус скругления углов */
+      text-decoration: none; /* Убираем подчеркивание */
+      margin-top: 20px; /* Отступ сверху */
+    }
+
+    /* Стили для кнопки при наведении */
+    .back-home:hover {
+      background: #eceeee; /* Цвет фона при наведении */
+      color: #20a5c3; /* Цвет текста при наведении */
+    }
+
+    /* Анимация цвета текста */
+    @keyframes colorAnimation {
+      0% {
+        color: rgba(153, 227, 236, 1); /* Начальный цвет */
+      }
+
+      50% {
+        color: #F0B6BC; /* Промежуточный цвет */
+      }
+
+      100% {
+        color: rgba(153, 227, 236, 1); /* Конечный цвет */
+      }
+    }
+
+    /* Анимация появления */
+    .fadeIn {
+      animation: fadeIn 3s; /* Применение анимации */
+      background: rgba(249, 209, 149, 1); /* Цвет фона */
+      padding: 10px; /* Внутренние отступы */
+    }
+
+    /* Анимация появления для тега svg */
+    @keyframes fadeIn {
+      from {
+        opacity: 0; /* Начальная непрозрачность */
+      }
+
+      to {
+        opacity: 1; /* Конечная непрозрачность */
+      }
+    }
+
+    /* Позиционирование ссылки "Вернуться домой" */
+    a {
+      position: relative; /* Относительное позиционирование */
+      top: -170px; /* Смещение вверх */
+    }
+
+    /* Позиционирование заголовка */
+    h1 {
+      position: relative; /* Относительное позиционирование */
+      top: -100px; /* Смещение вверх */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section">
+    <!-- Логотип с анимацией появления -->
+    <svg class="fadeIn" width="436" height="258">
+      <image href="../img/Kontakt/logo.png" width="436" height="258" />
+    </svg>
+    <!-- Заголовок ошибки -->
+    <h1 class="error">404</h1>
+    <!-- Блок текста с анимацией появления -->
+    <div class="page">
+      <p>Ooops!!! Страница, которую вы ищете, не найдена.</p>
+    </div>
+    <!-- Ссылка "Вернуться домой" -->
+    <a class="back-home" href="../index.html">Вернуться домой</a>
+  </div>
+</body>
+
+</html>

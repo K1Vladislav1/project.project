@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="slides/slides.css" type="text/css" rel="stylesheet">
+  <link href="styles.css" type="text/css" rel="stylesheet" id="theme">
+  <link href="index.css" type="text/css" rel="stylesheet" id="theme1">
+  <link href="contacts.css" type="text/css" rel="stylesheet" id="theme2">
+  
+  <title>contacts</title>
+</head>
+
+<body>
+  <div id="base" class="container">
+
+    <!-- Логотип -->
+    <div id="u62" class="ax_default image">
+      <img id="u62_img" class="img " alt="логотип" src="img/Kontakt/logo.png">
+      <div id="u62_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+      </div>
+    </div>
+
+    <header id="nav" class="nav">
+      <div class="nav-list"><!-- ШАПКА -->
+        <div class="Menu">
+          <div class="menu1">
+            <div class="M_enu">
+              <p><a class="hyperlink" href="index.html">ГЛАВНАЯ</a></p>
+            </div>
+            <div class="M_enu">
+              <p><a class="hyperlink" href="menu.html"> МЕНЮ </a></p>
+            </div>
+            <div class="M_enu">
+              <p><a class="hyperlink" href="contacts.html">КОНТАКТЫ</a></p>
+            </div>
+            <div class="M_enu">
+              <p><a class="hyperlink" href="about.Us.html"> О НАС </a></p>
+            </div>
+          </div>
+        </div>
+        <!--Кнопка ПРИ МАЛЕНЬКОМ ЭКРАНЕ-->
+        <button id="nav-btn" class="nav-button">
+            <img id="nav-btn-img" src="img/icons/nav-open.svg" alt="Nav button">
+        </button>
+      </div>
+    </header>
+    <!-- content содержит содержимое формы -->
+        <div class="content">
+          
+                  <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
+                  <div class="left-side">
+                    <div class="address details">
+          
+                      <!-- Вместо классов: название шрифтовых иконок (fontawesome.com) -->
+                      <i class="fas fa-map-marker-alt"></i>
+          
+                      <!-- topic - заголовок, text-one, text-two - текст -->
+                      <div class="topic">Адрес</div>
+                      <div class="text-one">г. Петропавловск</div>
+                      <div class="text-two">Пресненская наб., 8 стр. 1</div>
+                    </div>
+                    <div class="phone details">
+                      <i class="fas fa-phone-alt"></i>
+                      <div class="topic">Телефон</div>
+                      <div class="text-one">8-707-032-05-40</div>
+                      <div class="text-two">8-770-486-35-88</div>
+                    </div>
+                    <div class="email details">
+                      <i class="fas fa-envelope"></i>
+                      <div class="topic">Email</div>
+                      <div class="text-one">support@site.com</div>
+                      <div class="text-two">admin@site.com</div>
+                    </div>
+                  </div>
+          
+                  <!-- Правая колонка: сама форма -->
+                  <div class="right-side">
+          
+                    <!-- Заголовок для формы -->
+                    <div class="topic-text">Отправьте нам сообщение</div>
+          
+                    <!-- Какой-то дополнительный текст -->
+                    <p>
+                      Если у вас есть какие-то вопросы или предложения по сотрудничеству -
+                      заполните форму ниже
+                    </p>
+          
+                    <!-- Форма обратной связи -->
+                    <form action="#">
+          
+                      <!-- Форма обратной связи -->
+                    <form action="#">
+          
+                      <!-- Каждый input для выравнивания вкладываем в блок input-box -->
+                      <div class="input-box">
+                        <input
+                          type="text"
+                          placeholder="Ваше имя"
+                          name="name" 
+                          id="name" 
+                          data-reg="^[А-ЯЁ][а-яё]*$" 
+                        />
+                        <label for="name">Только русские буквы</label> <!-- добавить -->
+                      </div>
+                      <div class="input-box">
+                        <input type="text" placeholder="Введите email"name="email" id="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" >
+                      
+                        <label for="email">В формате: name@mail.com</label> <!-- добавить -->
+                      </div>
+                      <div class="input-box">
+                        <input
+                          type="text"
+                          placeholder="Введите телефон"
+                          name="phone" 
+                          id="phone" 
+                          data-reg="^((\+7|7|8)+([0-9]){10})$" 
+                        />
+                        <label for="phone">В формате: 88000000000 или 78000000000</label> <!-- добавить -->
+                      </div>
+                      <div class="input-box message-box">
+                        <textarea placeholder="Сообщение"></textarea>
+                      </div>
+                      <div class="button">
+                        <input type="button" value="Отправить" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
+              <script
+                src="https://kit.fontawesome.com/fce9a50d02.js"
+                crossorigin="anonymous"
+              ></script>
+              <footer>
+                <!-- Подвал -->
+                <div id="u73" class="ax_default image">
+                  <img id="u73_img" class="img " alt="кнопка" src="img/Kontakt/u14.png">
+                  <div id="u73_text" class="text " style="display:none; visibility: hidden">
+                    <p></p>
+                  </div>
+                </div>
+                <!--ПОДВАЛ ДЛЯ ПРОЕКТА -->
+                <div class="footer">
+                  <div class="container1">
+                    <div class="footer-row">
+                      <div class="footer-copyright">
+                        <div class="footer-copyright-name">Кислинский Владислав ИС-22</div>
+                         <p> © 2024 Кондитерская «СЛАДКАЯ ЖИЗНЬ».</p>
+                      </div>
+          
+                      <div class="footer-icons">
+                        <p>Профили в социальных сетях</p>
+                        <div class="footer-icons-row">
+                          <a href="#">
+                            <img src="img/icons/icon=instagramm, color=yes, round=yes.svg" alt="">
+                          </a>
+                          <a href="#">
+                            <img src="img/icons/icon=facebook, color=yes, round=yes.svg" alt="">
+                          </a>
+                          <a href="#">
+                            <img src="img/icons/icon=watsapp, color=yes, round=yes (1).svg" alt="">
+                          </a>
+                        </div>
+          
+          
+                      </div>
+          
+                       <div class="footer-contacts">
+                          <a href="#" class="footer-button1">Связаться Вконтакте</a>
+                          <p><a id="styleMod" class="hyperlink1">Сменить тему </a></p>
+                       </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </div>
+        <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

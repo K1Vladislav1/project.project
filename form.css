@@ -1,0 +1,102 @@
+.row1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Выравнивание текста по центру */
+  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  
+}
+
+.col-51 {
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+/* Стили для заголовков */
+h3 {
+  color: #673A1C;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Стили для меток */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #673A1C;
+  font-weight: 500;
+}
+
+/* Стили для полей ввода */
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Стили для чекбокса */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Стили для кнопки */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Стили для иконок карт */
+.icon-container {
+  margin-bottom: 20px;
+}
+
+/* Стили для иконок карт (FontAwesome) */
+.fa {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+/* Стили для иконок карт (цвет) */
+.fa-visa {
+  color: navy;
+}
+
+.fa-amex {
+  color: blue;
+}
+
+.fa-mastercard {
+  color: red;
+}
+
+.fa-discover {
+  color: orange;
+}
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column; /* Устанавливаем направление флекса в столбец */
+  }
+  
+  .col-51 {
+    width: 100%; /* Ширина колонки 100%, чтобы они занимали всю доступную ширину */
+    padding: 0; /* Убираем отступы внутри колонки */
+  }
+}

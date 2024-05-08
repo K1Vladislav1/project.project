@@ -1,0 +1,90 @@
+.slider {
+    width: 80%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    margin: 45px auto 0; /* Устанавливаем автоматические отступы сверху, слева и справа */
+  }
+  
+  .slider-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider-img.active {
+    opacity: 1;
+  }
+  
+  .slider img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .slider .prev {
+    left: 10px;
+  }
+  
+  .slider .next {
+    right: 10px;
+  }
+  
+
+.arrow {
+    width: 120px;
+    height: 120px;
+}
+
+.arrow-right {
+    transform: rotate(180deg);
+}
+
+@keyframes show {
+    0% {
+        opacity: 10%;
+        width: 10%;
+        height: 10%;
+        border-radius: 100%;
+        transform: rotateY(180deg);
+    }
+}
+
+.block {
+    display: block;
+    animation: show 1.3s 1;
+    margin: 0 auto;
+}
+
+.pagination-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid deepskyblue;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: #FFAEC9;
+}
+
+#bottom {
+    display: flex;
+    column-gap: 25px;
+}
+.Menu {
+    display: flex;
+    justify-content: center; /* Выравниваем по горизонтали по центру */
+  }
+  
+  .menu1 {
+    text-align: center; /* Выравниваем содержимое по центру */
+  }
+  
+  .menu1 p {
+    margin: 10px 0; /* Добавляем небольшие отступы между пунктами меню */
+  }

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="slides/slides.css" type="text/css" rel="stylesheet">
+  <link href="styles.css" type="text/css" rel="stylesheet" id="theme">
+  <link href="index.css" type="text/css" rel="stylesheet" id="theme1">">
+  <link href="menu.css" type="text/css" rel="stylesheet">
+  
+  <title>Menu</title>
+</head>
+
+<body>
+  <div id="base" class="container">
+
+    <!-- Логотип -->
+    <div id="u62" class="ax_default image">
+      <img id="u62_img" class="img " alt="логотип" src="img/Kontakt/logo.png">
+      <div id="u62_text" class="text " style="display:none; visibility: hidden">
+        <p></p>
+      </div>
+    </div>
+
+    <header id="nav" class="nav">
+      <div class="nav-list"><!-- ШАПКА -->
+        <div class="Menu">
+          <div class="menu1">
+            <div class="M_enu">
+              <p><a class="hyperlink" href="index.html">ГЛАВНАЯ</a></p>
+            </div>
+            <div class="M_enu">
+              <p><a class="hyperlink" href="menu.html"> МЕНЮ </a></p>
+            </div>
+            <div class="M_enu">
+              <p><a class="hyperlink" href="contacts.html">КОНТАКТЫ</a></p>
+            </div>
+            <div class="M_enu with-submenu">
+              <p><a class="hyperlink" href="about.Us.html"> О НАС </a></p>
+            </div>
+          </div>
+        </div>
+        <!--Кнопка ПРИ МАЛЕНЬКОМ ЭКРАНЕ-->
+        <button id="nav-btn" class="nav-button">
+            <img id="nav-btn-img" src="img/icons/nav-open.svg" alt="Nav button">
+        </button>
+      </div>
+    </header>
+    <div class="menu_1">
+        <div class="menu_4">
+            <!-- Пункт меню 1 -->
+            <div class="ax_default heading_3">
+                <img src="img/Menu/cupcake1.png" alt="Image 1">
+                <p class="order2"><span>КЛАССИЧЕСКИЙ КРАСНЫЙ БАРХАТ</span></p>
+                <p class="order3"><span>Цена 600 тг</span></p>
+                <div class="order1">
+                    <p><span><a class="order" href="Order.form.html">ЗАКАЗАТЬ</a></span></p>
+                </div>
+            </div>
+            
+            <!-- Пункт меню 2 -->
+            <div class="ax_default heading_3">
+                <img src="img/Menu/cupcake2.png" alt="Image 2">
+                <p class="order2"><span>ШОКОЛАДНАЯ ВАНИЛЬ</span></p>
+                <p class="order3"><span>Цена 700 тг</span></p>
+                <div class="order1">
+                    <p><span><a class="order" href="Order.form.html">ЗАКАЗАТЬ</a></span></p>
+                </div>
+            </div>
+            
+            <!-- Пункт меню 3 -->
+            <div class="ax_default heading_3">
+                <img src="img/Menu/3.png" alt="Image 3">
+                <p class="order2"><span>ДВОЙНОЙ ШОКОЛАД</span></p>
+                <p class="order3"><span>Цена 900 тг</span></p>
+                <div class="order1">
+                    <p><span><a class="order" href="Order.form.html">ЗАКАЗАТЬ</a></span></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu_5">
+            <!-- Пункт меню 4 -->
+            <div class="ax_default heading_3">
+                <img src="img/Menu/4.png" alt="Image 4">
+                <p class="order2"><span>КЛАССИЧЕСКИЙ КРАСНЫЙ БАРХАТ<br>(БЕЗ ГЛЮТЕНА)</br></span></p>
+                <p class="order3"><span>Цена 500 тг</span></p>
+                <div class="order1">
+                    <p><span><a class="order" href="Order.form.html">ЗАКАЗАТЬ</a></span></p>
+                </div>
+            </div>
+            
+            <!-- Пункт меню 5 -->
+            <div class="ax_default heading_3">
+                <img src="img/Menu/cupcake5.png" alt="Image 5">
+                <p class="order2"><span>ШОКОЛАДНАЯ ВАНИЛЬ<br>(БЕЗ САХАРА)<br></span></p>
+                <p class="order3"><span>Цена 600 тг</span></p>
+                <div class="order1">
+                    <p><span><a class="order" href="Order.form.html">ЗАКАЗАТЬ</a></span></p>
+                </div>
+            </div>
+            
+            <!-- Пункт меню 6 -->
+            <div class="ax_default heading_3">
+                <img src="img/Menu/6png.png" alt="Image 6">
+                <p class="order2"><span>ДВОЙНОЙ ШОКОЛАД <br>(БЕЗ САХАРА)</br></span></p>
+                <p class="order3"><span>Цена 800 тг</span></p>
+                <div class="order1">
+                    <p><span><a class="order" href="Order.form.html">ЗАКАЗАТЬ</a></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="chart-container">
+          <h2>Доля кондитерских изделий на рынке Казахстана за 2022 (в %)</h2>
+          <!-- Канва для отображения графика -->
+          <canvas id="myChart"></canvas>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const data = {
+      labels: ['Иностранные фабрики', 'Рахат', 'Баян Сулу', 'Прочее'],
+      datasets: [{
+        label: 'Доля рынка',
+        data: [60, 22, 18, 10], // Процентная доля рынка
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.8)',
+          'rgba(54, 162, 235, 0.8)',
+          'rgba(255, 206, 86, 0.8)',
+          'rgba(153, 102, 255, 0.8)'
+        ],
+        borderColor: 'rgba(0, 0, 0, 1)', // Цвет границы столбцов
+        borderWidth: 1 // Толщина границы столбцов
+      }]
+    };
+
+    // Настройки графика
+    const options = {
+      responsive: true, // Адаптивность графика
+      scales: {
+        y: {
+          display: false, // Скрыть ось Y
+        },
+        x: {
+          display: false, // Скрыть ось X
+        }
+      }
+    };
+
+    // Инициализация графика
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'pie', // Тип графика - круговая диаграмма
+      data: data,
+      options: options
+    });
+    </script>
+  </div>
+    </div> 
+    <footer>
+        <!-- Подвал -->
+        <div id="u73" class="ax_default image">
+          <img id="u73_img" class="img " alt="кнопка" src="img/Kontakt/u14.png">
+          <div id="u73_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+        <!--ПОДВАЛ ДЛЯ ПРОЕКТА -->
+        <div class="footer">
+          <div class="container1">
+            <div class="footer-row">
+              <div class="footer-copyright">
+                <div class="footer-copyright-name">Кислинский Владислав ИС-22</div>
+                 <p> © 2024 Кондитерская «СЛАДКАЯ ЖИЗНЬ».</p>
+              </div>
+  
+              <div class="footer-icons">
+                <p>Профили в социальных сетях</p>
+                <div class="footer-icons-row">
+                  <a href="#">
+                    <img src="img/icons/icon=instagramm, color=yes, round=yes.svg" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/icons/icon=facebook, color=yes, round=yes.svg" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/icons/icon=watsapp, color=yes, round=yes (1).svg" alt="">
+                  </a>
+                </div>
+  
+              </div>
+  
+               <div class="footer-contacts">
+                  <a href="#" class="footer-button">Связаться Вконтакте</a>
+                  <p><a id="styleMod" class="hyperlink1">Сменить тему </a></p>
+               </div>
+  
+            </div>
+          </div>
+        </div>
+
+      </footer>
+</div>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
