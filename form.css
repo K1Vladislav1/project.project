@@ -51,7 +51,7 @@ input[type="checkbox"] {
 
 /* Стили для кнопки */
 .btn {
-  background-color: #4CAF50;
+  background-color: rgba(153, 227, 236, 1);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -60,7 +60,7 @@ input[type="checkbox"] {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: rgba(153, 227, 236, 1);
 }
 
 /* Стили для иконок карт */
